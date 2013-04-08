@@ -173,3 +173,7 @@ vendor.video.framework.thumbnail.SurfaceMode=1
 
 # TEE
 ro.vendor.mtk_microtrust_tee_support=1
+
+# WiFi
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=15
