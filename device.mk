@@ -23,6 +23,10 @@ PRODUCT_SHIPPING_API_LEVEL := 35
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 # Virtual A/B
 PRODUCT_PACKAGES += \
     checkpoint_gc \
