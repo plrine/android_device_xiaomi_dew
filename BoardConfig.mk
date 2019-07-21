@@ -115,6 +115,9 @@ TARGET_BOARD_PLATFORM := mt6768
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2026-02-01
+
 # vendor_boot image
 AB_OTA_PARTITIONS += \
     vendor_boot
