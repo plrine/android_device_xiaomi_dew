@@ -155,6 +155,9 @@ BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864
 
+# SELinux
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
 # Verified Boot
 AB_OTA_PARTITIONS += \
     vbmeta \
