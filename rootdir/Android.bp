@@ -3,9 +3,105 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+sh_binary {
+    name: "init.insmod.sh",
+    src: "bin/init.insmod.sh",
+    required: [ "init.insmod.mtk.cfg" ],
+    vendor: true,
+}
+
 prebuilt_etc {
     name: "fstab.mt6768",
     src: "etc/fstab.mt6768",
     vendor: true,
     vendor_ramdisk_available: true,
+}
+
+prebuilt_etc {
+    name: "init.batterysecret.rc",
+    src: "etc/init.batterysecret.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.connectivity.rc",
+    src: "etc/init.connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "init_connectivity.rc",
+    src: "etc/init_connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.connectivity.common.rc",
+    src: "etc/init.connectivity.common.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.insmod.mtk.cfg",
+    src: "etc/init.insmod.mtk.cfg",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mi_thermald.rc",
+    src: "etc/init.mi_thermald.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.modem.rc",
+    src: "etc/init.modem.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6768.rc",
+    src: "etc/init.mt6768.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6768.usb.rc",
+    src: "etc/init.mt6768.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mtkgki.rc",
+    src: "etc/init.mtkgki.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.project.rc",
+    src: "etc/init.project.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.sensor_1_0.rc",
+    src: "etc/init.sensor_1_0.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.mtk.rc",
+    src: "etc/ueventd.mtk.rc",
+    filename: "ueventd.rc",
+    vendor: true,
 }

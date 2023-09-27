@@ -16,6 +16,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.batterysecret.rc \
+    init.connectivity.rc \
+    init_connectivity.rc \
+    init.connectivity.common.rc \
+    init.insmod.sh \
+    init.mi_thermald.rc \
+    init.modem.rc \
+    init.mt6768.rc \
+    init.mt6768.usb.rc \
+    init.mtkgki.rc \
+    init.project.rc \
+    init.sensor_1_0.rc \
+    ueventd.mtk.rc
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 35
 
