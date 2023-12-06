@@ -43,6 +43,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     hardware/xiaomi
 
+# Linker config
+PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
+    $(DEVICE_PATH)/configs/linker.config.json
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
