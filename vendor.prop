@@ -33,3 +33,4 @@ ro.vendor.bt.platform=connac1x
 
 # DRM
 drm.service.enabled=true
+ro.netflix.bsp_rev=MTK6768-19055-1
