@@ -120,6 +120,9 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6768
@@ -159,6 +162,9 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864
 
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
+# VINTF
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
 # Verified Boot
 AB_OTA_PARTITIONS += \
