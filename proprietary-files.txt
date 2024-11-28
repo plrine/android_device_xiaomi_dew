@@ -1,1 +1,5 @@
 # All blobs from missi-user 16 BP2A.250605.031.A3 OS3.0.1.0.WBNMIXM release-keys, unless pinned
+
+# Vibrator
+vendor/lib64/hw/vibrator.default.so
+vendor/lib64/hw/vibrator.mt6768.so
