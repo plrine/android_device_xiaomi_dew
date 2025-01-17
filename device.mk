@@ -34,6 +34,10 @@ PRODUCT_PACKAGES += \
     init.sensor_1_0.rc \
     ueventd.mtk.rc
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 720
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 35
 
