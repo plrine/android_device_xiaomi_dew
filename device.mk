@@ -13,6 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 35
 
