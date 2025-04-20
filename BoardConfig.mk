@@ -18,6 +18,17 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a55
 
+# Virtual A/B
+AB_OTA_PARTITIONS := \
+    odm \
+    odm_dlkm \
+    product \
+    system \
+    system_dlkm \
+    system_ext \
+    vendor \
+    vendor_dlkm
+
 # Boot Image
 AB_OTA_PARTITIONS += \
     boot
