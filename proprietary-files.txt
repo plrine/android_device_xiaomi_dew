@@ -152,6 +152,12 @@ vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
 
+# Bluetooth (Driver)
+vendor/lib64/libbt-vendor.so
+vendor/lib64/libbluetooth_audio_session_aidl_mtk.so
+vendor/lib64/libbluetooth_mtk.so
+vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so
+
 # Vibrator
 vendor/lib64/hw/vibrator.default.so
 vendor/lib64/hw/vibrator.mt6768.so
