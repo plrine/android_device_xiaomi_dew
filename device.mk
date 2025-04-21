@@ -79,5 +79,10 @@ PRODUCT_PACKAGES += \
     fstab.mt6768 \
     fstab.mt6768.vendor_ramdisk
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.example \
+    android.hardware.health-service.example_recovery
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/dew/dew-vendor.mk)
