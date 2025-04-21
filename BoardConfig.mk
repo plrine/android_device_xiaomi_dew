@@ -107,6 +107,9 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
 
+# Recovery
+TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
+
 # vendor_boot image
 AB_OTA_PARTITIONS += \
     vendor_boot
