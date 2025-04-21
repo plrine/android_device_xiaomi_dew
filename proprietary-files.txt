@@ -163,6 +163,10 @@ vendor/etc/audio_param/Volume_ParamUnitDesc.xml
 vendor/lib64/libbt-vendor.so
 vendor/lib64/libbluetooth_mtk.so
 
+# DRM (Widevine)
+vendor/apex/com.google.android.widevine.nonupdatable.apex
+vendor/lib64/liboemcrypto.so
+
 # Vibrator
 vendor/lib/hw/vibrator.default.so
 vendor/lib/hw/vibrator.mt6768.so

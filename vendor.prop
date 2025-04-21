@@ -30,3 +30,6 @@ ro.vendor.audio.volume_super_streamtype=44
 # Bluetooth
 ro.vendor.bt.connac3=no
 ro.vendor.bt.platform=connac1x
+
+# DRM
+drm.service.enabled=true
