@@ -26,3 +26,7 @@ ro.vendor.audio.volume_super_customsetstreamtype=true
 ro.vendor.audio.volume_super_index_add=10
 ro.vendor.audio.volume_super_percent=200
 ro.vendor.audio.volume_super_streamtype=44
+
+# Bluetooth
+ro.vendor.bt.connac3=no
+ro.vendor.bt.platform=connac1x
