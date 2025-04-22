@@ -144,3 +144,13 @@ ro.vendor.pq.mtk_silky_brigtness_support=2
 ro.vendor.pq.mtk_ultra_dimming_support=0
 ro.vendor.pq.mtk_ultra_resolution_support=1
 ro.vendor.pq.mtk_video_transition=0
+
+# Media
+ro.vendor.mtk.c2.vdec.fmt.support.level=2
+ro.vendor.mtk.c2.vdec.vpp.turnkey.memc=1
+ro.vendor.mtk_hdr_video_support=1
+ro.vendor.mtk_video_hevc_enc_support=1
+vendor.mtk.vdec.decode.error.handle.mode=1
+vendor.mtk.vdec.waitkeyframeforplay=9
+vendor.mtk_thumbnail_optimization=true
+vendor.video.framework.thumbnail.SurfaceMode=1
