@@ -158,3 +158,6 @@ vendor.mtk.vdec.decode.error.handle.mode=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 vendor.mtk_thumbnail_optimization=true
 vendor.video.framework.thumbnail.SurfaceMode=1
+
+# TEE
+ro.vendor.mtk_microtrust_tee_support=1
