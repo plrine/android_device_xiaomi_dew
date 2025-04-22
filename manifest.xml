@@ -27,4 +27,8 @@
         <name>vendor.mediatek.hardware.pq_aidl</name>
         <fqname>IPictureQuality_AIDL/default</fqname>
     </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.nvram</name>
+        <fqname>INvram/default</fqname>
+    </hal>
 </manifest>
