@@ -22,19 +22,15 @@
     </Settings>
     <Decoders>
         <MediaCodec name="c2.mtk.adpcm-ms.decoder" type="audio/x-adpcm-ms">
-            <Alias name="OMX.MTK.AUDIO.DECODER.ADPCM.MS" />
             <Limit name="channel-count" max="8" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.adpcm-dvi-ima.decoder" type="audio/x-adpcm-dvi-ima">
-            <Alias name="OMX.MTK.AUDIO.DECODER.ADPCM.DVI" />
             <Limit name="channel-count" max="8" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.ape.decoder" type="audio/ape">
-            <Alias name="OMX.MTK.AUDIO.DECODER.APE" />
             <Limit name="channel-count" max="2" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.alac.decoder" type="audio/alac">
-            <Alias name="OMX.MTK.AUDIO.DECODER.ALAC" />
             <Limit name="channel-count" max="8" />
         <!-- </MediaCodec>
         <MediaCodec name="c2.mtk.wma.decoder" type="audio/x-ms-wma">
@@ -42,13 +38,11 @@
             <Limit name="channel-count" max="2" /> -->
         </MediaCodec>
         <MediaCodec name="c2.mtk.mp3.decoder" type="audio/mpeg" rank="5">
-            <Alias name="OMX.MTK.AUDIO.DECODER.MP3" />
             <Limit name="channel-count" max="2" />
             <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000" />
             <Limit name="bitrate" range="8000-320000" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.mpeg4.decoder" type="video/mp4v-es" >
-            <Alias name="OMX.MTK.VIDEO.DECODER.MPEG4" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="size" min="16x16" max="2048x2048" />
@@ -61,7 +55,6 @@
             <Limit name="performance-point-1920x1088" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.h263.decoder" type="video/3gpp" >
-            <Alias name="OMX.MTK.VIDEO.DECODER.H263" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <!-- max 2048x1088@60 -->
@@ -74,7 +67,6 @@
             <Limit name="performance-point-1280x720" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.avc.decoder" type="video/avc" >
-            <Alias name="OMX.MTK.VIDEO.DECODER.AVC" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <!-- max 3840x2160@30 -->
@@ -90,7 +82,6 @@
             <Feature name="can-swap-width-height"/>
         </MediaCodec>
         <MediaCodec name="c2.mtk.avc.decoder.secure" type="video/avc" >
-            <Alias name="OMX.MTK.VIDEO.DECODER.AVC.secure" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <!-- max 1920x1088@30 -->
@@ -106,7 +97,6 @@
             <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.hevc.decoder" type="video/hevc" >
-            <Alias name="OMX.MTK.VIDEO.DECODER.HEVC" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <!-- max 3840x2160@30 -->
@@ -121,7 +111,6 @@
             <Feature name="can-swap-width-height"/>
         </MediaCodec>
         <MediaCodec name="c2.mtk.vpx.decoder" type="video/x-vnd.on2.vp8" >
-            <Alias name="OMX.MTK.VIDEO.DECODER.VPX" />
             <Limit name="alignment" value="1x1" />
             <Limit name="block-size" value="16x16" />
             <!-- max 1920x1088@30 -->
@@ -136,7 +125,6 @@
             <Feature name="can-swap-width-height"/>
         </MediaCodec>
         <MediaCodec name="c2.mtk.vp9.decoder" type="video/x-vnd.on2.vp9" >
-            <Alias name="OMX.MTK.VIDEO.DECODER.VP9" />
             <Limit name="alignment" value="1x1" />
             <Limit name="block-size" value="16x16" />
             <!-- max 3840x2160@30 -->
@@ -151,7 +139,6 @@
             <Feature name="can-swap-width-height"/>
         </MediaCodec>
         <MediaCodec name="c2.mtk.vp9.decoder.secure" type="video/x-vnd.on2.vp9" >
-            <Alias name="OMX.MTK.VIDEO.DECODER.VP9.secure" />
             <Limit name="alignment" value="1x1" />
             <Limit name="block-size" value="16x16" />
             <!-- max 1920x1088@30 -->
@@ -167,7 +154,6 @@
             <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.mpeg2.decoder" type="video/mpeg2" >
-            <Alias name="OMX.MTK.VIDEO.DECODER.MPEG2" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="size" min="16x16" max="2048x2048" />
@@ -199,7 +185,6 @@
             <Feature name="bitrate-modes" value="CBR" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.avc.encoder" type="video/avc" >
-            <Alias name="OMX.MTK.VIDEO.ENCODER.AVC" />
             <Limit name="size" min="128x128" max="2560x2560" />
             <!-- max 2560x1440@30 -->
             <Limit name="alignment" value="2x2" />
@@ -228,7 +213,6 @@
             <Feature name ="special-codec" required="true" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.hevc.encoder" type="video/hevc" >
-            <Alias name="OMX.MTK.VIDEO.ENCODER.HEVC" />
             <Limit name="size" min="128x128" max="2400x1088" />
             <!-- max 2560x1440@30 -->
             <Limit name="alignment" value="2x2" />
