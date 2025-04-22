@@ -257,6 +257,13 @@ vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so
 
+# Sensors
+vendor/lib64/hw/sensors.dynamic_sensor_hal.so
+vendor/lib64/hw/sensors.mt6768.so
+vendor/lib64/libsensorndkbridge.so
+vendor/lib64/libsensor_custom.so
+vendor/lib64/sensors.touch.detect.so
+
 # Vibrator
 vendor/lib/hw/vibrator.default.so
 vendor/lib/hw/vibrator.mt6768.so
