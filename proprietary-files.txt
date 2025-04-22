@@ -234,6 +234,11 @@ vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
 
+# MMS
+vendor/bin/hw/vendor.mediatek.hardware.mms-service
+vendor/etc/init/vendor.mediatek.hardware.mms-service.rc
+vendor/lib64/vendor.mediatek.hardware.mms-V1-ndk.so
+
 # Picture Quality
 vendor/bin/hw/vendor.mediatek.hardware.mmlpq@V1-service
 vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service
