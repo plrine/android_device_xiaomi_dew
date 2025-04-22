@@ -31,6 +31,11 @@ ro.vendor.audio.volume_super_streamtype=44
 ro.vendor.bt.connac3=no
 ro.vendor.bt.platform=connac1x
 
+# Display
+ro.vendor.hdr10plus.enable=1
+ro.vendor.mtk_cuva_hdr_support=1
+ro.vendor.mtk_hdr10p_adaptive_support=1
+
 # DRM
 drm.service.enabled=true
 ro.netflix.bsp_rev=MTK6768-19055-1

@@ -185,5 +185,14 @@
 #v4l2 device
 /dev/video*  0660 media system
 
+<<<<<<< HEAD
 #VideoCodec
 /dev/vcu 0660 media system
+=======
+# xiaomi display feature
+subsystem mi_display
+    devname uevent_devpath
+    dirname /dev/mi_display
+
+/dev/mi_display/*         0666   root       graphics
+>>>>>>> 2e439c0 (rodin: Configure Display/Display Feature stack)
