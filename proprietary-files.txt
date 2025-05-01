@@ -229,6 +229,19 @@ vendor/lib64/vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk.so
 vendor/apex/com.google.android.widevine.nonupdatable.apex
 vendor/lib64/liboemcrypto.so
 
+# Fingerprint
+vendor/bin/hw/vendor.silead.hardware.fingerprintext-service
+vendor/etc/init/vendor.silead.hardware.fingerprintext-service.rc
+vendor/lib64/com.fingerprints.extension.aidl_if-V1-ndk.so
+vendor/lib64/hw/fingerprint.fpc.default.so
+vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.silead.default.so
+vendor/lib64/libgf_ca.so
+vendor/lib64/libgf_hal.so
+vendor/lib64/libgoodixfingerprint.so
+vendor/lib64/libsl_fp_impl.so
+vendor/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so
+
 # Firmware
 vendor/firmware/BT_FW.cfg
 vendor/firmware/chipone_firmware.bin
