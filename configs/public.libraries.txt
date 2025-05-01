@@ -1,0 +1,13 @@
+libOpenCL.so
+libmpbase.so 64
+libanc_night.so 64
+libmialgoengine.so 64
+libmialgoengine2.so 64
+libcom.xiaomi.pluginutils.so
+libc++_shared.so 64
+vendor.mediatek.hardware.camera.isphal@1.0.so 64
+vendor.mediatek.hardware.camera.atms@1.0.so 64
+libanc_single_bokeh.so 64
+libanc_single_bokeh_rear.so 64
+libTrueSight.so 64
+libmorpho_ImageRefiner.so 64

@@ -42,6 +42,31 @@ ro.vendor.connsys.dedicated.log.port=bt,wifi,ics,btmcu,wifimcu
 ro.vendor.connsys.dedicated.log=1
 vendor.connsys.driver.ready=no
 
+# Camera
+camera.disable_zsl_mode=1
+persist.vendor.camera3.pipeline.bufnum.base.imgo=3
+persist.vendor.camera3.pipeline.bufnum.base.lcso=4
+persist.vendor.camera3.pipeline.bufnum.base.rrzo=3
+persist.vendor.camera3.pipeline.bufnum.base.rsso=4
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=5
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.imgo=6
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.lcso=7
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.rrzo=5
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.rsso=6
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.imgo=5
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.lcso=6
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.rrzo=5
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=5
+ro.vendor.mtk_camera_app_version=3
+ro.vendor.mtk_video_hevc_enc_support=1
+vendor.camera.mdp.cz.enable=1
+vendor.camera.mdp.dre.enable=0
+vendor.mtk.camera.app.fd.video=1
+ro.vendor.camera.insensorzoom.support=0
+ro.vendor.camera.isp.support.colorspace=0
+ro.vendor.camera3.zsl.default=140
+
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
 
