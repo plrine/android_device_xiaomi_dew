@@ -132,4 +132,14 @@
         <fqname>IMtkRadioExVoice/slot1</fqname>
         <fqname>IMtkRadioExVoice/slot2</fqname>
     </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.fingerprintextension</name>
+        <version>1</version>
+        <fqname>IXiaomiFingerprint/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.fx.tunnel</name>
+        <version>1</version>
+        <fqname>IMiFxTunnel/default</fqname>
+    </hal>
 </manifest>
