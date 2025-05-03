@@ -2,7 +2,8 @@
 
 import ${ro.vendor.rc}init.connectivity.rc
 import ${ro.vendor.rc}init.mt6768.usb.rc
-import /vendor/etc/init/hw/init.mt6899.fingerprint.rc
+import /vendor/etc/init/hw/init.mt6768.fingerprint.rc
+import /vendor/etc/init/hw/init.mt6768.power.rc
 import /vendor/etc/init/hw/init.project.rc
 import /system_ext/etc/init/hw/init.aee.rc
 import /FWUpgradeInit.rc
