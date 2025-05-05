@@ -52,6 +52,19 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.frameworks.cameraservice.service-V2-ndk', 'android.frameworks.cameraservice.service-V3-ndk'),
     'vendor/lib64/libteei_daemon_vfs.so': blob_fixup()
         .add_needed('liblog.so'),
+   (
+    'vendor/lib64/libTrueSight.so',
+    'vendor/lib64/libMiVideoFilter.so'
+    ): blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_createFromHandle')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_getNativeHandle')
+        .clear_symbol_version('AHardwareBuffer_isSupported')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_lockPlanes')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
