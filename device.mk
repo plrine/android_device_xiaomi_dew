@@ -70,5 +70,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     fastbootd
 
+# fstab
+PRODUCT_PACKAGES += \
+    fstab.mt6768 \
+    fstab.mt6768.vendor_ramdisk
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/dew/dew-vendor.mk)
