@@ -162,6 +162,33 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so
 vendor/apex/com.google.android.widevine.nonupdatable.apex
 vendor/lib64/liboemcrypto.so
 
+# Firmware
+vendor/firmware/BT_FW.cfg
+vendor/firmware/chipone_firmware.bin
+vendor/firmware/Conf_MultipleTest.ini
+vendor/firmware/connfem.cfg
+vendor/firmware/fm_cust.cfg
+vendor/firmware/focaltech_ts_hkc_2nd_fw.bin
+vendor/firmware/frsm-spk1.bin
+vendor/firmware/fs1801.fsm
+vendor/firmware/lib3a.ccu
+vendor/firmware/mt6631_fm_v1_coeff.bin
+vendor/firmware/mt6631_fm_v1_patch.bin
+vendor/firmware/novatek_ts_tcl_1st_fw.bin
+vendor/firmware/novatek_ts_tcl_1st_mp.bin
+vendor/firmware/novatek_ts_xinli_3rd_fw.bin
+vendor/firmware/novatek_ts_xinli_3rd_mp.bin
+vendor/firmware/ocs72xxx_cf.bin
+vendor/firmware/remoteproc_scp
+vendor/firmware/sipa.bin
+vendor/firmware/soc1_0_patch_mcu_1a_1_hdr.bin
+vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin
+vendor/firmware/soc1_0_ram_mcu_1a_1_hdr.bin
+vendor/firmware/soc1_0_ram_wifi_1a_1_hdr.bin
+vendor/firmware/wifi.cfg
+vendor/firmware/WIFI_RAM_CODE_soc1_0_1a_1.bin
+vendor/firmware/WMT_SOC.cfg
+
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper-service.beanpod
 vendor/etc/init/android.hardware.gatekeeper-service.beanpod.rc
