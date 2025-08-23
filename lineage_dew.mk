@@ -23,6 +23,5 @@ PRODUCT_MODEL := Redmi 15C
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="missi-user 16 BP2A.250605.031.A3 OS3.0.1.0.WBNMIXM release-keys"
-
-BUILD_FINGERPRINT := Xiaomi/dew/missi:16/BP2A.250605.031.A3/OS3.0.1.0.WBNMIXM:user/release-keys
+    BuildDesc="missi-user 16 BP2A.250605.031.A3 OS3.0.1.0.WBNMIXM release-keys" \
+    BuildFingerprint=Xiaomi/dew/missi:16/BP2A.250605.031.A3/OS3.0.1.0.WBNMIXM:user/release-keys
