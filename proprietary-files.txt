@@ -1,5 +1,11 @@
 # All blobs from missi-user 16 BP2A.250605.031.A3 OS3.0.1.0.WBNMIXM release-keys, unless pinned
 
+# AAL
+vendor/lib64/libaalservice.so
+vendor/lib64/libaal_cust.so
+vendor/lib64/libaal_key.so
+vendor/lib64/libaal_sec.so
+
 # Audio
 vendor/lib64/hw/audio.primary.mt6768.so
 vendor/lib64/hw/audio.r_submix.mt6768.so
