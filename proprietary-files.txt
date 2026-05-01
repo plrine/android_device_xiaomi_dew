@@ -16,7 +16,6 @@ vendor/lib/hw/audio.primary.mt6768.so
 vendor/lib/hw/audio.r_submix.mt6768.so
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/lib_iir.so
-vendor/lib/lib_speech_enh.so
 vendor/lib/libaudio_param_parser-vnd.so
 vendor/lib/libaudiocompensationfilter_vendor.so
 vendor/lib/libaudiocompensationfilterc.so
@@ -42,7 +41,7 @@ vendor/lib/libnxp_extamp_intf.so
 vendor/lib/librt_extamp_intf.so
 vendor/lib/libspeech_enh_lib.so
 vendor/lib/libspeechparser_vendor.so
-vendor/lib/vendor.mediatek.hardware.audio@7.1.so
+vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 
 # Audio Configs
 vendor/etc/audio_param/AudioParamOptions.xml
