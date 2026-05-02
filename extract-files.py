@@ -47,6 +47,9 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.graphics.common-V4-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     'vendor/etc/init/android.hardware.media.c2-mediatek.rc': blob_fixup()
         .regex_replace('c2-mediatek\n', 'c2-mediatek-64b\n'),
+    'vendor/lib64/libcamera2ndk_vendor.so': blob_fixup()
+        .replace_needed('android.frameworks.cameraservice.device-V2-ndk', 'android.frameworks.cameraservice.device-V3-ndk')
+        .replace_needed('android.frameworks.cameraservice.service-V2-ndk', 'android.frameworks.cameraservice.service-V3-ndk'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
