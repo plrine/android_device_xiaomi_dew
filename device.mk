@@ -206,7 +206,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 PRODUCT_PACKAGES += \
-    init.mt6899.power.rc
+    init.mt6768.power.rc
 
 PRODUCT_PACKAGES += \
     libmtkperf_client_vendor

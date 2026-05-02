@@ -6,7 +6,7 @@
 sh_binary {
     name: "init.insmod.sh",
     src: "bin/init.insmod.sh",
-    required: [ "init.insmod.mtk.cfg" ],
+    required: [ "init.insmod.mt6768.cfg" ],
     vendor: true,
 }
 
@@ -45,8 +45,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.insmod.mtk.cfg",
-    src: "etc/init.insmod.mtk.cfg",
+    name: "init.insmod.mt6768.cfg",
+    src: "etc/init.insmod.mt6768.cfg",
     vendor: true,
 }
 
