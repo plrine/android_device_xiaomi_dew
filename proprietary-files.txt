@@ -883,7 +883,7 @@ vendor/lib64/libvcodecdrv_header_stub.so
 # Media (Codec2)
 vendor/bin/hw/android.hardware.media.c2-mediatek-64b
 vendor/etc/VideoLog_dynamic.ds
-vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc
+vendor/etc/init/android.hardware.media.c2-mediatek.rc:vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
 vendor/etc/vintf/manifest/manifest_media_c2_default.xml
