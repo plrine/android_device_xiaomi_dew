@@ -33,7 +33,7 @@ vendor/lib64/libmtklimiter_vendor.so
 vendor/lib64/libmtkshifter_vendor.so
 vendor/lib64/libnxp_extamp_intf.so
 vendor/lib64/librt_extamp_intf.so
-vendor/lib64/libspeech_enh_lib.so
+vendor/lib64/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 
@@ -752,7 +752,7 @@ vendor/etc/init/vendor.silead.hardware.fingerprintext-service.rc
 vendor/lib64/com.fingerprints.extension.aidl_if-V1-ndk.so
 vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/hw/fingerprint.goodix.default.so
-vendor/lib64/hw/fingerprint.silead.default.so
+vendor/lib64/hw/fingerprint.silead.default.so;FIX_SONAME
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixfingerprint.so
@@ -1144,7 +1144,7 @@ vendor/etc/init/netdagent.rc
 vendor/etc/init/wlan_assistant.rc
 vendor/etc/vintf/manifest/CommandService.xml
 vendor/lib64/libwapi.so
-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 vendor/lib64/libwifical.so
 vendor/lib64/libwifinvram.so
 vendor/lib64/libwifinvramdata.so
