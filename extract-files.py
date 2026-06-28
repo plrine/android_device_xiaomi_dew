@@ -52,6 +52,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.frameworks.cameraservice.service-V2-ndk', 'android.frameworks.cameraservice.service-V3-ndk'),
     'vendor/lib64/libteei_daemon_vfs.so': blob_fixup()
         .add_needed('liblog.so'),
+    'vendor/bin/mnld': blob_fixup()
+        .replace_needed('libmnl.so', 'libmnl_mtk.so'),
    (
     'vendor/lib64/libTrueSight.so',
     'vendor/lib64/libMiVideoFilter.so'
