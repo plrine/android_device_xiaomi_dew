@@ -54,6 +54,11 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('liblog.so'),
     'vendor/bin/mnld': blob_fixup()
         .replace_needed('libmnl.so', 'libmnl_mtk.so'),
+    (
+        'vendor/lib64/libcodec2_mtk_vdec.so',
+        'vendor/lib64/libcodec2_mtk_venc.so'
+    ): blob_fixup()
+        .replace_needed('libformatter.so', 'libformatter_mtk.so'),
    (
     'vendor/lib64/libTrueSight.so',
     'vendor/lib64/libMiVideoFilter.so'
