@@ -77,6 +77,16 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_unlock'),
     'vendor/lib64/libbluetooth_audio_session_aidl_mtk.so': blob_fixup()
         .replace_needed('vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so', 'vendor.mediatek.hardware.bluetooth.audio-V3-ndk.so'),
+    (
+        'vendor/lib64/hw/displayfeature.default.so',
+        'vendor/lib64/hw/vendor.mediatek.hardware.pq_aidl-impl.so',
+        'vendor/lib64/hw/audio.primary.mt6768.so',
+        'vendor/lib64/hw/hwcomposer.mt6768.so',
+        'vendor/lib64/libsilkybrightnesscore.so',
+        'vendor/lib64/libpqxmlparser.so',
+        'vendor/lib64/librt_extamp_intf.so',
+    ): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
