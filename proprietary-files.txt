@@ -959,7 +959,6 @@ vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so
 # Power
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so
 
 # Radio
 vendor/bin/ccci_mdinit

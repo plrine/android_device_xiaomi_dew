@@ -214,7 +214,10 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
+    vendor.mediatek.hardware.mtkpower-service.stub
+
+$(call soong_config_set_bool,libmtkperf_client,powerhalwrap_aidl,true)
 
 PRODUCT_PACKAGES += \
     init.mt6768.power.rc
