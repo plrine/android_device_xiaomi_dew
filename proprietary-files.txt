@@ -157,7 +157,6 @@ vendor/etc/init/init.bt_drv.rc
 vendor/lib64/libbt-vendor.so
 vendor/lib64/libbluetooth_audio_session_aidl_mtk.so
 vendor/lib64/libbluetooth_mtk.so
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so
 
 # Camera
 vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so
