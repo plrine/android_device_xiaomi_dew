@@ -1137,9 +1137,7 @@ vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
 
 # WiFi
-vendor/bin/netdagent
 vendor/etc/init/init.wlan_drv.rc
-vendor/etc/init/netdagent.rc
 vendor/etc/vintf/manifest/CommandService.xml
 vendor/lib64/libwapi.so
 vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
