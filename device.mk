@@ -191,7 +191,21 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.example_recovery
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.recovery.mt6768.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6768.rc
+    $(DEVICE_PATH)/rootdir/etc/init.recovery.mt6768.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6768.rc
+
+# Touchscreen firmware for recovery
+FW_SRC := vendor/xiaomi/dew/proprietary/vendor/firmware
+PRODUCT_COPY_FILES += \
+    $(FW_SRC)/novatek_ts_tcl_1st_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_tcl_1st_fw.bin \
+    $(FW_SRC)/novatek_ts_tcl_1st_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_tcl_1st_mp.bin \
+    $(FW_SRC)/novatek_ts_xinli_3rd_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_xinli_3rd_fw.bin \
+    $(FW_SRC)/novatek_ts_xinli_3rd_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_xinli_3rd_mp.bin \
+    $(FW_SRC)/focaltech_ts_hkc_2nd_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_hkc_2nd_fw.bin \
+    $(FW_SRC)/novatek_ts_tcl_1st_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/novatek_ts_tcl_1st_fw.bin \
+    $(FW_SRC)/novatek_ts_tcl_1st_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/novatek_ts_tcl_1st_mp.bin \
+    $(FW_SRC)/novatek_ts_xinli_3rd_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/novatek_ts_xinli_3rd_fw.bin \
+    $(FW_SRC)/novatek_ts_xinli_3rd_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/novatek_ts_xinli_3rd_mp.bin \
+    $(FW_SRC)/focaltech_ts_hkc_2nd_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/focaltech_ts_hkc_2nd_fw.bin
 
 # Media
 PRODUCT_COPY_FILES += \
