@@ -34,6 +34,8 @@ PRODUCT_PACKAGES += \
     init.sensor_1_0.rc \
     ueventd.mtk.rc
 
+$(call soong_config_set_bool,mediatek_gadget,use_custom_usb_gadget_rc,true)
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
@@ -44,7 +46,9 @@ PRODUCT_SHIPPING_API_LEVEL := 35
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
-    hardware/google/pixel \
+    hardware/google/pixel/pixelstats \
+    hardware/google/pixel/power-libperfmgr \
+    hardware/google/pixel/thermal \
     hardware/google/interfaces \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \

@@ -157,7 +157,6 @@ vendor/etc/init/init.bt_drv.rc
 vendor/lib64/libbt-vendor.so
 vendor/lib64/libbluetooth_audio_session_aidl_mtk.so
 vendor/lib64/libbluetooth_mtk.so
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so
 
 # Camera
 vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so
@@ -740,7 +739,6 @@ vendor/lib64/libion_ulit.so
 vendor/lib64/libheichal.so
 vendor/lib64/libdisplayfeature.so
 vendor/lib64/libdisplayfeatureservice.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk.so
 
 # DRM (Widevine)
 vendor/apex/com.google.android.widevine.nonupdatable.apex
@@ -894,7 +892,7 @@ vendor/lib64/libcodec2_vpp_fa_plugin.so
 vendor/lib64/libcodec2_vpp_mi_plugin.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
-vendor/lib64/libformatter.so
+vendor/lib64/libformatter.so:vendor/lib64/libformatter_mtk.so;FIX_SONAME
 
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms-service
@@ -960,7 +958,6 @@ vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so
 # Power
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so
 
 # Radio
 vendor/bin/ccci_mdinit
@@ -1138,10 +1135,8 @@ vendor/lib64/libifcutils_mtk.so
 
 # WiFi
 vendor/bin/netdagent
-vendor/bin/wlan_assistant
 vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/netdagent.rc
-vendor/etc/init/wlan_assistant.rc
 vendor/etc/vintf/manifest/CommandService.xml
 vendor/lib64/libwapi.so
 vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
@@ -1150,4 +1145,3 @@ vendor/lib64/libwifinvram.so
 vendor/lib64/libwifinvramdata.so
 vendor/lib64/libwpa_client.so
 vendor/lib64/vendor.mediatek.hardware.netdagent-V1-ndk.so
-vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so

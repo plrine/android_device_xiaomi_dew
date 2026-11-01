@@ -50,10 +50,17 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libcamera2ndk_vendor.so': blob_fixup()
         .replace_needed('android.frameworks.cameraservice.device-V2-ndk', 'android.frameworks.cameraservice.device-V3-ndk')
         .replace_needed('android.frameworks.cameraservice.service-V2-ndk', 'android.frameworks.cameraservice.service-V3-ndk'),
+    'vendor/lib64/libbluetooth_audio_session_aidl_mtk.so': blob_fixup()
+        .replace_needed('vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so', 'vendor.mediatek.hardware.bluetooth.audio-V3-ndk.so'),
     'vendor/lib64/libteei_daemon_vfs.so': blob_fixup()
         .add_needed('liblog.so'),
     'vendor/bin/mnld': blob_fixup()
         .replace_needed('libmnl.so', 'libmnl_mtk.so'),
+    (
+        'vendor/lib64/libcodec2_mtk_vdec.so',
+        'vendor/lib64/libcodec2_mtk_venc.so'
+    ): blob_fixup()
+        .replace_needed('libformatter.so', 'libformatter_mtk.so'),
    (
     'vendor/lib64/libTrueSight.so',
     'vendor/lib64/libMiVideoFilter.so'
