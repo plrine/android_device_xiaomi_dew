@@ -56,7 +56,7 @@ PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Virtual A/B
 PRODUCT_PACKAGES += \
