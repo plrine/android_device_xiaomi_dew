@@ -283,5 +283,20 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml
 
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-V3-ndk.vendor \
+    android.hardware.security.rkp-V3-ndk.vendor \
+    android.hardware.security.sharedsecret-V1-ndk.vendor \
+    lib_android_keymaster_keymint_utils.vendor \
+    libcppbor.vendor \
+    libcppbor_external.vendor \
+    libcppcose_rkp.vendor \
+    libkeymaster_messages.vendor \
+    libkeymaster_portable.vendor \
+    libkeymint.vendor \
+    libpuresoftkeymasterdevice.vendor \
+    libsoft_attestation_cert.vendor
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/dew/dew-vendor.mk)

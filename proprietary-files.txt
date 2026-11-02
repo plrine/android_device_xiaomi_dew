@@ -787,7 +787,16 @@ vendor/firmware/WMT_SOC.cfg
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper-service.beanpod
 vendor/etc/init/android.hardware.gatekeeper-service.beanpod.rc
--vendor/etc/vintf/manifest/android.hardware.gatekeeper-service.beanpod.xml
+vendor/etc/vintf/manifest/android.hardware.gatekeeper-service.beanpod.xml
+
+# Keymint
+vendor/bin/hw/android.hardware.security.keymint@3.0-service.beanpod;DISABLE_DEPS
+vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service.beanpod.xml
+vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.beanpod.xml
+vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.beanpod.xml
+vendor/etc/permissions/android.hardware.keystore.app_attest_key.prebuilt.xml
+
 
 # GNSS
 vendor/bin/hw/android.hardware.gnss-service.mediatek
