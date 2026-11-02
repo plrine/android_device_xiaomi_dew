@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_dew.mk
+    $(LOCAL_DIR)/halcyon_dew.mk
