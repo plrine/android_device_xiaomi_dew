@@ -49,6 +49,9 @@ overlay /system_ext/etc/permissions overlay ro,lowerdir=/mnt/vendor/mi_ext/syste
 
 
 
+odm /odm erofs ro wait,slotselect,avb,logical,first_stage_mount
+odm /odm ext4 ro wait,slotselect,avb,logical,first_stage_mount
+
 vendor_dlkm /vendor_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount
 vendor_dlkm /vendor_dlkm ext4 ro wait,slotselect,avb,logical,first_stage_mount
 
