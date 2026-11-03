@@ -1,0 +1,2 @@
+/sys/devices/virtual/mi_display/disp_feature/disp-DSI-0/panel_info    u:object_r:sysfs_lcm_name:s0
+/sys/class/mi_display/disp-DSI-0/panel_info                          u:object_r:sysfs_lcm_name:s0
