@@ -1,83 +1,9 @@
 {
     "Sensors":[
         {
-            "Name":"cpu-little-core0",
+            "Name":"CPU",
             "Type":"CPU",
-            "HotThreshold":[
-                "NaN",
-                "NaN",
-                "NaN",
-                85.0,
-                90.0,
-                100.0,
-                117.0
-            ],
-            "VrThreshold":50.0,
-            "Multiplier":0.001
-        },
-	{
-            "Name":"cpu-little-core1",
-            "Type":"CPU",
-            "HotThreshold":[
-                "NaN",
-                "NaN",
-                "NaN",
-                85.0,
-                90.0,
-                100.0,
-                117.0
-            ],
-            "VrThreshold":50.0,
-            "Multiplier":0.001
-        },
-	{
-            "Name":"cpu-little-core2",
-            "Type":"CPU",
-            "HotThreshold":[
-                "NaN",
-                "NaN",
-                "NaN",
-                85.0,
-                90.0,
-                100.0,
-                117.0
-            ],
-            "VrThreshold":50.0,
-            "Multiplier":0.001
-        },
-	{
-            "Name":"cpu-little-core3",
-            "Type":"CPU",
-            "HotThreshold":[
-                "NaN",
-                "NaN",
-                "NaN",
-                85.0,
-                90.0,
-                100.0,
-                117.0
-            ],
-            "VrThreshold":50.0,
-            "Multiplier":0.001
-        },
-	{
-            "Name":"cpu-medium-core4-0",
-            "Type":"CPU",
-            "HotThreshold":[
-                "NaN",
-                "NaN",
-                "NaN",
-                85.0,
-                90.0,
-                100.0,
-                117.0
-            ],
-            "VrThreshold":50.0,
-            "Multiplier":0.001
-        },
-	{
-            "Name":"cpu-medium-core4-1",
-            "Type":"CPU",
+            "ZoneName":"mtktsAP",
             "HotThreshold":[
                 "NaN",
                 "NaN",
@@ -91,128 +17,9 @@
             "Multiplier":0.001
         },
         {
-            "Name":"cpu-medium-core5-0",
-            "Type":"CPU",
-            "HotThreshold":[
-                "NaN",
-                "NaN",
-                "NaN",
-                85.0,
-                90.0,
-                100.0,
-                117.0
-            ],
-            "VrThreshold":50.0,
-            "Multiplier":0.001
-        },
-        {
-            "Name":"cpu-medium-core5-1",
-            "Type":"CPU",
-            "HotThreshold":[
-                "NaN",
-                "NaN",
-                "NaN",
-                85.0,
-                90.0,
-                100.0,
-                117.0
-            ],
-            "VrThreshold":50.0,
-            "Multiplier":0.001
-        },
-        {
-            "Name":"cpu-medium-core6-0",
-            "Type":"CPU",
-            "HotThreshold":[
-                "NaN",
-                "NaN",
-                "NaN",
-                85.0,
-                90.0,
-                100.0,
-                117.0
-            ],
-            "VrThreshold":50.0,
-            "Multiplier":0.001
-        },
-        {
-            "Name":"cpu-medium-core6-1",
-            "Type":"CPU",
-            "HotThreshold":[
-                "NaN",
-                "NaN",
-                "NaN",
-                85.0,
-                90.0,
-                100.0,
-                117.0
-            ],
-            "VrThreshold":50.0,
-            "Multiplier":0.001
-        },
-        {
-            "Name":"cpu-big-core7-0",
-            "Type":"CPU",
-            "HotThreshold":[
-                "NaN",
-                "NaN",
-                "NaN",
-                85.0,
-                90.0,
-                100.0,
-                117.0
-            ],
-            "VrThreshold":50.0,
-            "Multiplier":0.001
-        },
-        {
-            "Name":"cpu-big-core7-1",
-            "Type":"CPU",
-            "HotThreshold":[
-                "NaN",
-                "NaN",
-                "NaN",
-                85.0,
-                90.0,
-                100.0,
-                117.0
-            ],
-            "VrThreshold":50.0,
-            "Multiplier":0.001
-        },
-        {
-            "Name":"gpu0",
+            "Name":"GPU",
             "Type":"GPU",
-            "HotThreshold":[
-                "NaN",
-                "NaN",
-                "NaN",
-                85.0,
-                90.0,
-                100.0,
-                117.0
-            ],
-            "VrThreshold":50.0,
-            "Multiplier":0.001
-        },
-	{
-            "Name":"gpu1",
-            "Type":"GPU",
-            "HotThreshold":[
-                "NaN",
-                "NaN",
-                "NaN",
-                85.0,
-                90.0,
-                100.0,
-                117.0
-            ],
-            "VrThreshold":50.0,
-            "Multiplier":0.001
-        },
-   	{
-            "Name":"gpu2",
-            "Type":"GPU",
+            "ZoneName":"mtktsAP",
             "HotThreshold":[
                 "NaN",
                 "NaN",
@@ -226,8 +33,9 @@
             "Multiplier":0.001
         },
         {
-            "Name":"battery",
+            "Name":"BATTERY",
             "Type":"BATTERY",
+            "ZoneName":"battery",
             "HotThreshold":[
                 "NaN",
                 "NaN",
@@ -241,8 +49,26 @@
             "Multiplier":0.001
         },
         {
-            "Name":"mtktsbtsmdpa",
+            "Name":"SKIN",
+            "Type":"SKIN",
+            "ZoneName":"mtktsAP",
+            "HotThreshold":[
+                "NaN",
+                43.0,
+                45.0,
+                50.0,
+                70.0,
+                80.0,
+                90.0
+            ],
+            "VrThreshold":50.0,
+            "Multiplier":0.001,
+            "Monitor":true
+        },
+        {
+            "Name":"POWER_AMPLIFIER",
             "Type":"POWER_AMPLIFIER",
+            "ZoneName":"mtktsbtsmdpa",
             "HotThreshold":[
                 "NaN",
                 "NaN",
@@ -256,27 +82,55 @@
             "Multiplier":0.001
         },
         {
-            "Name":"mtktsAP",
-            "Type":"SKIN",
+            "Name":"NPU",
+            "Type":"NPU",
+            "ZoneName":"mtktsAP",
             "HotThreshold":[
                 "NaN",
-                43.0,
-                45.0,
-                50.0,
-                70.0,
-                80.0,
-                90.0
+                "NaN",
+                "NaN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
             ],
             "VrThreshold":50.0,
-            "Multiplier":0.001,
-            "Monitor":true
+            "Multiplier":0.001
+        },
+        {
+            "Name":"TPU",
+            "Type":"TPU",
+            "ZoneName":"mtktsAP",
+            "HotThreshold":[
+                "NaN",
+                "NaN",
+                "NaN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold":50.0,
+            "Multiplier":0.001
+        },
+        {
+            "Name":"SOC",
+            "Type":"SOC",
+            "ZoneName":"mtktsAP",
+            "HotThreshold":[
+                "NaN",
+                "NaN",
+                "NaN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold":50.0,
+            "Multiplier":0.001
         }
     ],
     "CoolingDevices":[
-        {
-            "Name":"devfreq-13000000.mali",
-            "Type":"GPU"
-        },
         {
             "Name":"charger-cooler",
             "Type":"BATTERY"

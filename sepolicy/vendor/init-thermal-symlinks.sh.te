@@ -1,0 +1,1 @@
+allow init-thermal-symlinks-sh vendor_shell_exec:file rx_file_perms;
