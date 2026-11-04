@@ -2,4 +2,6 @@
 /sys/class/mi_display/disp-DSI-0/panel_info                          u:object_r:sysfs_lcm_name:s0
 
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr  u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors-service\.xiaomi-multihal  u:object_r:hal_sensors_default_exec:s0
+
 
