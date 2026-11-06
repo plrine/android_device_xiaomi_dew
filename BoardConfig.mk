@@ -176,6 +176,10 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml
 
 # WiFi
+SOONG_CONFIG_NAMESPACES += mediatek_wifi_hal
+SOONG_CONFIG_mediatek_wifi_hal += use_pre_baklava_qpr0_struct
+SOONG_CONFIG_mediatek_wifi_hal_use_pre_baklava_qpr0_struct := true
+
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
 BOARD_HOSTAPD_DRIVER := NL80211

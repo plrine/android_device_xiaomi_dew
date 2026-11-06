@@ -32,6 +32,8 @@ ro.vendor.audio.volume_super_streamtype=44
 vendor.audio.powerhal.latency.ul=true
 
 # Bluetooth
+persist.bluetooth.a2dp_offload.disabled=true
+persist.bluetooth.disableinbandringing=false
 ro.vendor.bt.connac3=no
 ro.vendor.bt.platform=connac1x
 
@@ -266,12 +268,12 @@ persist.vendor.radio.flashless.fsm=0
 persist.vendor.radio.flashless.fsm_cst=0
 persist.vendor.radio.flashless.fsm_rw=0
 persist.vendor.radio.msimmode=dsds
-persist.vendor.radio.mtk_dsbp_support=3
-persist.vendor.radio.mtk_ps2_rat=N/L/W/G
+persist.vendor.radio.mtk_dsbp_support=2
+persist.vendor.radio.mtk_ps2_rat=L/W/G
 persist.vendor.radio.mtk_ps3_rat=G
 persist.vendor.radio.smart.data.switch=1
 persist.vendor.wfc.cnop_vowifi=1
-ro.telephony.default_network=33,33,33,33
+ro.telephony.default_network=10,10,10,10
 ro.telephony.iwlan_operation_mode=AP-assisted
 ro.telephony.sim.count=2
 ro.vendor.md_prop_ver=1
@@ -288,12 +290,13 @@ ro.vendor.mtk_mcf_support=1
 ro.vendor.mtk_md_world_mode_support=1
 ro.vendor.mtk_mipc_support=1
 ro.vendor.mtk_mobile_management=1
-ro.vendor.mtk_protocol1_rat_config=N/Lf/Lt/W/G
-ro.vendor.mtk_ps1_rat=N/Lf/Lt/W/G
+ro.vendor.mtk_protocol1_rat_config=C/Lf/Lt/W/T/G
+ro.vendor.mtk_ps1_rat=C/Lf/Lt/W/T/G
 ro.vendor.mtk_ril_mode=c6m_1rild
 ro.vendor.mtk_rild_read_imsi=1
 ro.vendor.mtk_sim_card_onoff=3
 ro.vendor.mtk_sim_hot_swap_common_slot=1
+ro.vendor.mtk_thin_md_telephony_support_mode=0
 ro.vendor.mtk_world_phone_policy=0
 ro.vendor.num_md_protocol=2
 # Radio
