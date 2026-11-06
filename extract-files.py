@@ -85,6 +85,10 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/librt_extamp_intf.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/lib64/libbt-vendor.so': blob_fixup()
+        .sig_replace('60 02 40 39 5a 00 00 94', 'e0 03 1f 2a 5a 00 00 94'),
+    'vendor/lib64/libmtkmipc-ril.so': blob_fixup()
+        .sig_replace('0a 00 00 14 e1 f4 ff f0 21 74 31 91', '0a 00 00 14 09 00 00 14 21 74 31 91'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
