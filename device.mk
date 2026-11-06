@@ -142,7 +142,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.common-V2-ndk \
+    android.hardware.camera.common-V1-ndk \
     android.hardware.camera.device-V3-ndk \
     android.hardware.camera.provider-V3-ndk
 
