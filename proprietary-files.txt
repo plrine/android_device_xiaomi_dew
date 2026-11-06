@@ -161,6 +161,7 @@ vendor/lib64/libbluetooth_mtk.so
 # Camera
 vendor/bin/hw/camerahalserver
 vendor/etc/init/camerahalserver.rc
+vendor/lib64/libudf.so
 vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.atms_aidl@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl.so
