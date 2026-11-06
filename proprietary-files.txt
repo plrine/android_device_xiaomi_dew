@@ -159,11 +159,17 @@ vendor/lib64/libbluetooth_audio_session_aidl_mtk.so
 vendor/lib64/libbluetooth_mtk.so
 
 # Camera
+vendor/bin/hw/camerahalserver
+vendor/etc/init/camerahalserver.rc
 vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.atms_aidl@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.postproc_aidl@1.0-impl.so
+vendor/lib64/libmtkcam_hal_aidl_common.so
+vendor/lib64/libmtkcam_hal_aidl_device.so
+vendor/lib64/libmtkcam_hal_aidl_provider.so
+vendor/lib64/libmtkcam_hal_aidl_utils.so
 vendor/lib64/lib3a.ae.core.so
 vendor/lib64/lib3a.ae.so
 vendor/lib64/lib3a.af.core.so
@@ -755,6 +761,7 @@ vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixfingerprint.so
 vendor/lib64/libsl_fp_impl.so
+vendor/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so
 vendor/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so
 
 # Firmware
@@ -887,7 +894,7 @@ vendor/lib64/libvcodec_oal.so
 vendor/lib64/libvcodecdrv_header_stub.so
 
 # Media (Codec2)
-vendor/bin/hw/android.hardware.media.c2-mediatek-64b:vendor/bin/hw/android.hardware.media.c2-mediatek
+vendor/bin/hw/android.hardware.media.c2-mediatek-64b:vendor/bin/hw/android.hardware.media.c2-mediatek;TRYSRCFIRST
 vendor/etc/VideoLog_dynamic.ds
 vendor/etc/init/android.hardware.media.c2-mediatek.rc
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy
@@ -1057,6 +1064,7 @@ vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-imsi.xml
 
 # Sensors
+vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
 vendor/lib64/hw/sensors.dynamic_sensor_hal.so
 vendor/lib64/hw/sensors.mt6768.so
 vendor/lib64/libsensorndkbridge.so

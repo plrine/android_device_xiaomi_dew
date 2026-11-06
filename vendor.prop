@@ -296,6 +296,9 @@ ro.vendor.mtk_sim_card_onoff=3
 ro.vendor.mtk_sim_hot_swap_common_slot=1
 ro.vendor.mtk_world_phone_policy=0
 ro.vendor.num_md_protocol=2
+# Radio
+ro.vendor.radio.manufacturer_id=1
+ro.vendor.radio.hal_chip_id=1101
 ro.vendor.radio.max.multisim=dsds
 ro.vendor.sim_me_lock_mode=3
 telephony.active_modems.max_count=2
@@ -305,5 +308,9 @@ telephony.lteOnCdmaDevice=1
 ro.vendor.mtk_microtrust_tee_support=1
 
 # WiFi
+ro.vendor.wlan.chrdev=wmt_chrdev_wifi
+ro.vendor.wlan.gen=gen4m_6768
+ro.vendor.wlan.standalone.log=y
+ro.hardware.wlan.dbs=0
 wifi.interface=wlan0
 wifi.supplicant_scan_interval=120
