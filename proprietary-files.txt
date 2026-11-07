@@ -685,6 +685,7 @@ vendor/odm/etc/camera/cameraopt_reclaim.json:vendor/etc/camera/cameraopt_reclaim
 # Connectivity
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
+vendor/etc/init/init.wmt_drv.rc
 vendor/lib64/libconnfem.so
 
 # Display
@@ -972,16 +973,21 @@ vendor/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so
 
 # Power
+vendor/bin/batterysecret
+vendor/etc/battery_info.xml
+vendor/etc/init/init.batterysecret.rc
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
 # Radio
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
+vendor/bin/gsm0710muxd
 vendor/bin/hw/mtkfusionrild
 vendor/bin/muxreport
 vendor/bin/rcs_volte_stack
 vendor/bin/volte_clientapi_ua
+vendor/etc/init/gsm0710muxd.rc
 vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
 vendor/etc/init/mtkrild.rc

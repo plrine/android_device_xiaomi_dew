@@ -32,6 +32,8 @@ ro.vendor.audio.volume_super_streamtype=44
 vendor.audio.powerhal.latency.ul=true
 
 # Bluetooth
+bluetooth.core.le.vendor_capabilities.enabled=false
+bluetooth.ble.vnd.included=false
 persist.bluetooth.a2dp_offload.disabled=true
 persist.bluetooth.disableinbandringing=false
 ro.vendor.bt.connac3=no

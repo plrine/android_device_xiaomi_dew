@@ -281,6 +281,7 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
 
 # WiFi
+$(call soong_config_set,mediatek_wifi_hal,use_pre_baklava_qpr0_struct,true)
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
@@ -308,6 +309,10 @@ PRODUCT_PACKAGES += \
     libkeymint.vendor \
     libpuresoftkeymasterdevice.vendor \
     libsoft_attestation_cert.vendor
+
+# Telephony
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.radio.multisim.config=dsds
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/dew/dew-vendor.mk)
