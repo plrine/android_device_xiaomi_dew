@@ -1,0 +1,4 @@
+# Camera & Bluetooth
+binder_call(system_app, mtk_hal_camera)
+binder_call(system_app, mtk_hal_bluetooth)
+allow system_app hal_camera_service:service_manager find;

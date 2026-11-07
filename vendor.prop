@@ -258,6 +258,8 @@ vendor.video.framework.thumbnail.SurfaceMode=1
 
 # Radio
 persist.radio.multisim.config=dsds
+persist.vendor.radio.multisimslot=2
+ro.boot.opt_sim_count=2
 persist.vendor.md_c2k_cap_dep_check=0
 persist.vendor.mims_support=2
 persist.vendor.mtk.vodata.allow_rat=1
