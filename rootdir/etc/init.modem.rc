@@ -16,5 +16,20 @@ on post-fs-data
 # Encrypt phone function
     setprop vold.post_fs_data_done 1
 
+on property:vendor.mtk.md1.status=ready
+    start vendor.gsm0710muxd
+
+on property:vendor.mtk.md1.status=reset
+    stop vendor.gsm0710muxd
+
+on property:vendor.mtk.md1.status=stop
+    stop vendor.gsm0710muxd
+
+on property:vendor.mtk.md1.status=flightmode
+    stop vendor.gsm0710muxd
+
+on property:vendor.mtk.md1.status=exception
+    stop vendor.gsm0710muxd
+
 
 

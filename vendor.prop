@@ -34,6 +34,7 @@ vendor.audio.powerhal.latency.ul=true
 # Bluetooth
 bluetooth.core.le.vendor_capabilities.enabled=false
 bluetooth.ble.vnd.included=false
+bluetooth.le.disable_apcf_extended_features=1
 persist.bluetooth.a2dp_offload.disabled=true
 persist.bluetooth.disableinbandringing=false
 ro.vendor.bt.connac3=no

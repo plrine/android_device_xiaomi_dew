@@ -32,7 +32,7 @@ if [ -f $cfg_file ]; then
       "enable") echo 1 > $arg ;;
       "modprobe")
         insmod_arg=${arg}
-        for partition in system_dlkm vendor
+        for partition in system_dlkm vendor_dlkm vendor
         do
           modules_dir_base="/${partition}/lib/modules"
           for modules_dir in ${modules_dir_base}/*/ ${modules_dir_base}
