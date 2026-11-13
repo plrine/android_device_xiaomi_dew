@@ -188,12 +188,12 @@ on post-fs
     chown root system /proc/ccci_dump
 
 on late-fs
+    class_start early_hal
     write /proc/bootprof "INIT:late-fs"
     setprop init.userspace_reboot.userdata_remount.timeoutmillis 10000
     write /proc/bootprof "INIT:Mount_START --late"
     write /sys/kernel/tracing/trace_marker "B|1|Mount late"
     mount_all /vendor/etc/fstab.mt6768 --late
-    exec /system/bin/tune2fs -O has_journal -u 10010 -r 4096 /dev/block/platform/bootdevice/by-name/userdata
     write /sys/kernel/tracing/trace_marker "E"
     write /proc/bootprof "INIT:Mount_END --late"
 

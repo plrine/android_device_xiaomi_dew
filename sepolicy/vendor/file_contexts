@@ -7,5 +7,8 @@
 
 /(vendor|system/vendor)/bin/batterysecret                                           u:object_r:batterysecret_exec:s0
 
+/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint@3\.0-service\.beanpod  u:object_r:hal_keymint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper-service\.beanpod              u:object_r:hal_gatekeeper_default_exec:s0
+
 
 
