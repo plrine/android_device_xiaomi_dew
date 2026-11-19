@@ -52,9 +52,14 @@
 # FMRadio
 /dev/fm                   0660   media     media
 
+# Audio
+/dev/accdet               0660   system     radio
+
 # NFC
 /dev/st21nfc              0660   nfc        radio
 /dev/st54spi              0660   secure_element        secure_element
+/dev/nq-nci               0660   nfc        system
+/dev/nxp-nci              0660   nfc        system
 
 # MTK BTIF driver
 /dev/btif                 0600   system     system
@@ -185,14 +190,12 @@
 #v4l2 device
 /dev/video*  0660 media system
 
-<<<<<<< HEAD
 #VideoCodec
 /dev/vcu 0660 media system
-=======
+
 # xiaomi display feature
 subsystem mi_display
     devname uevent_devpath
     dirname /dev/mi_display
 
 /dev/mi_display/*         0666   root       graphics
->>>>>>> 2e439c0 (rodin: Configure Display/Display Feature stack)

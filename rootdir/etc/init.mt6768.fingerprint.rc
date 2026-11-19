@@ -9,6 +9,8 @@ on boot
     chown system system /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/fingerdown_wait
     chown system system /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/modalias
     chown system system /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/clk_enable
+    chown system system /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/power_ctrl
+    chmod 0660 /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/power_ctrl
     chown system system /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/authen_fd/performance
     chmod 0200 /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/fingerdown_wait
     chown system system /sys/bus/platform/devices/soc:fpc1020/irq

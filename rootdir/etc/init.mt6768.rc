@@ -2,8 +2,6 @@
 
 import ${ro.vendor.rc}init.connectivity.rc
 import ${ro.vendor.rc}init.mt6768.usb.rc
-import /vendor/etc/init/hw/init.mt6768.fingerprint.rc
-import /vendor/etc/init/hw/init.mt6768.power.rc
 import /vendor/etc/init/hw/init.project.rc
 import /system_ext/etc/init/hw/init.aee.rc
 import /FWUpgradeInit.rc
@@ -15,6 +13,10 @@ import ${ro.vendor.rc}init.ago.rc
 import /vendor/etc/init/hw/init.stnfc.rc
 import /system/etc/init/hw/init.stnfc.rc
 import ${ro.vendor.rc}init.cgroup.rc
+import /vendor/etc/init/hw/init.mt6768.fingerprint.rc
+import /vendor/etc/init/hw/init.mt6768.power.rc
+import /vendor/etc/init/hw/init.batterysecret.rc
+import /vendor/etc/init/hw/init.mi_thermald.rc
 
 # init.modem.rc must be the LAST rc file because vold.post_fs_data_done is set in it
 import ${ro.vendor.rc}init.modem.rc
@@ -243,6 +245,10 @@ on post-fs-data
     chown root system /data/vendor/flash
     chmod 0771 /data/vendor/flash
 
+    # Audio HAL parameter directory
+    mkdir /data/vendor/audiohal 0771 audioserver audio
+    mkdir /data/vendor/audiohal/audio_param 0771 audioserver audio
+
     #Create shading mount point
     mkdir /data/vendor/shading
     chown root system /data/vendor/shading
@@ -314,6 +320,12 @@ on post-fs-data
 
     # Touch Panel
     # chmod 0664 /dev/touch
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/fts_gesture_mode
+    chmod 0660 /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/fts_gesture_mode
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/gesture_en
+    chmod 0660 /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/gesture_en
+    chown system system /proc/tp_gesture
+    chmod 0660 /proc/tp_gesture
     chown root diag /sys/module/tpd_setting/parameters/tpd_calmat
     chown root diag /sys/module/tpd_setting/parameters/tpd_em_debounce_time
     chown root diag /sys/module/tpd_setting/parameters/tpd_mode
@@ -683,6 +695,18 @@ on boot
     chmod 0660 /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
     chown system system /sys/devices/system/cpu/cpufreq/policy6/scaling_governor
     chmod 0660 /sys/devices/system/cpu/cpufreq/policy6/scaling_governor
+    chown system system /sys/devices/system/cpu/cpufreq/policy0/schedutil/rate_limit_us
+    chmod 0660 /sys/devices/system/cpu/cpufreq/policy0/schedutil/rate_limit_us
+    chown system system /sys/devices/system/cpu/cpufreq/policy6/schedutil/rate_limit_us
+    chmod 0660 /sys/devices/system/cpu/cpufreq/policy6/schedutil/rate_limit_us
+    chown system system /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
+    chmod 0660 /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
+    chown system system /sys/devices/system/cpu/cpufreq/policy6/schedutil/up_rate_limit_us
+    chmod 0660 /sys/devices/system/cpu/cpufreq/policy6/schedutil/up_rate_limit_us
+    chown system system /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
+    chmod 0660 /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
+    chown system system /sys/devices/system/cpu/cpufreq/policy6/schedutil/down_rate_limit_us
+    chmod 0660 /sys/devices/system/cpu/cpufreq/policy6/schedutil/down_rate_limit_us
     chown root   system /sys/kernel/debug/binder/transaction_log_enable
     chown root   system /sys/kernel/debug/binder/perf_evalue
     chown system system /sys/devices/system/cpu/rq-stats/htasks_thresh
@@ -863,6 +887,26 @@ on boot
     chmod 0660 /proc/perfmgr/smart/hps_uevent_enable
     chown system system /sys/power/dcm_state
     chmod 0660 /sys/power/dcm_state
+
+    # touch_boost & dvfsrc
+    chown system system /proc/touch_boost/enable
+    chmod 0660 /proc/touch_boost/enable
+    chown system system /proc/touch_boost/boost_ta
+    chmod 0660 /proc/touch_boost/boost_ta
+    chown system system /proc/touch_boost/boost_fg
+    chmod 0660 /proc/touch_boost/boost_fg
+    chown system system /sys/kernel/helio-dvfsrc/dvfsrc_force_ddr_opp
+    chmod 0660 /sys/kernel/helio-dvfsrc/dvfsrc_force_ddr_opp
+    chown system system /sys/devices/platform/10012000.dvfsrc/helio-dvfsrc/dvfsrc_force_ddr_opp
+    chmod 0660 /sys/devices/platform/10012000.dvfsrc/helio-dvfsrc/dvfsrc_force_ddr_opp
+    chown system system /proc/perfmgr/boost_ctrl/dram_ctrl/ddr
+    chmod 0660 /proc/perfmgr/boost_ctrl/dram_ctrl/ddr
+    chown system system /proc/perfmgr/boost_ctrl/eas_ctrl/sched_boost
+    chmod 0660 /proc/perfmgr/boost_ctrl/eas_ctrl/sched_boost
+    chown system system /proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_uclamp_min
+    chmod 0660 /proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_uclamp_min
+    chown system system /proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_ta_uclamp_min
+    chmod 0660 /proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_ta_uclamp_min
 
 ##Netlog tool
    #change permissions about terminal
