@@ -1,5 +1,6 @@
 /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/wakeup_enable  u:object_r:sysfs_fpc_clk:s0
 
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr  u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors-service\.xiaomi-multihal  u:object_r:hal_sensors_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi  u:object_r:hal_fingerprint_default_exec:s0
 /dev/silead_fp                                                                      u:object_r:fingerprint_device:s0
