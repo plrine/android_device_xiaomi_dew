@@ -17,3 +17,6 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint@3\.0-service\.beanpod  u:object_r:hal_keymint_default_exec:s0
 
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nqnfc-service\.nxp                u:object_r:hal_nfc_default_exec:s0
+
+
+

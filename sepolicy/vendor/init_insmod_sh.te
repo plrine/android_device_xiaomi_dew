@@ -1,0 +1,10 @@
+allow init_insmod_sh self:key { view read write search link setattr create };
+allow init_insmod_sh kernel:key { view read write search link setattr create };
+
+r_dir_file(init_insmod_sh, vendor_file)
+allow init_insmod_sh vendor_file:system module_load;
+
+r_dir_file(init_insmod_sh, sysfs_type)
+r_dir_file(init_insmod_sh, sysfs)
+
+allow init_insmod_sh kmsg_device:chr_file rw_file_perms;
