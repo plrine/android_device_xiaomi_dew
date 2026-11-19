@@ -1,3 +1,8 @@
+# Radio
+ro.vendor.radio.                  u:object_r:vendor_mtk_radio_prop:s0
+persist.vendor.radio.multisimslot u:object_r:vendor_mtk_radio_prop:s0
+ro.vendor.oem.                    u:object_r:vendor_oem_prop:s0
+
 # Fingerprint
 persist.vendor.fpc.               u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.            u:object_r:vendor_fp_prop:s0
