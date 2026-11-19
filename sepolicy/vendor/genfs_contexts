@@ -2,3 +2,4 @@ genfscon sysfs /devices/platform/battery-manager/power_supply u:object_r:sysfs_b
 genfscon sysfs /devices/platform/11012000.spi2/spi_master/spi2/spi2.0 u:object_r:sysfs_fpc_clk:s0
 genfscon sysfs /devices/platform/11012000.spi2/spi_master/spi2/spi2.0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11012000.spi2/spi_master/spi2/spi2.0/wakeup_enable u:object_r:sysfs_fpc_clk:s0
+genfscon sysfs /devices/platform/13040000.mali/devfreq/13040000.mali u:object_r:sysfs_thermal:s0
