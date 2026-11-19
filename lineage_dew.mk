@@ -11,8 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/dew/device.mk)
 
+# Insecure ADB
+WITH_ADB_INSECURE := true
+
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.usb.config=adb
 
 PRODUCT_NAME := lineage_dew
 PRODUCT_DEVICE := dew
