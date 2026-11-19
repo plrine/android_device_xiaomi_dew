@@ -22,6 +22,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
+# Overlays
+$(call inherit-product-if-exists, hardware/mediatek/overlay/mssi.mk)
+PRODUCT_PACKAGES += \
+    DewFrameworkResOverlay \
+    DewSystemUIResOverlay
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.batterysecret.rc \
