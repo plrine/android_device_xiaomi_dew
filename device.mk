@@ -9,8 +9,12 @@ DEVICE_PATH := device/xiaomi/dew
 # Enforce generic ramdisk allow list
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
-# Inherit launch_with_vendor_ramdisk product
+# Virtual A/B (Userspace Snapshots + Compression)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
+PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
+PRODUCT_PACKAGES += \
+    snapuserd.recovery
 
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -60,14 +64,15 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Virtual A/B
 PRODUCT_PACKAGES += \
-    com.android.hardware.boot \
-    android.hardware.boot-service.default_recovery
+    android.hardware.boot-service.mediatek \
+    android.hardware.boot-service.mediatek_recovery
 
 PRODUCT_PACKAGES += \
     checkpoint_gc \
-    otapreopt_script \
+    otapreopt_script
+
+PRODUCT_PACKAGES += \
     update_engine \
-    update_engine_client \
     update_engine_sideload \
     update_verifier
 
@@ -191,7 +196,21 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.example_recovery
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.recovery.mt6768.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6768.rc
+    $(DEVICE_PATH)/rootdir/etc/init.recovery.mt6768.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6768.rc
+
+# Touchscreen firmware for recovery
+FW_SRC := vendor/xiaomi/dew/proprietary/vendor/firmware
+PRODUCT_COPY_FILES += \
+    $(FW_SRC)/novatek_ts_tcl_1st_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_tcl_1st_fw.bin \
+    $(FW_SRC)/novatek_ts_tcl_1st_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_tcl_1st_mp.bin \
+    $(FW_SRC)/novatek_ts_xinli_3rd_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_xinli_3rd_fw.bin \
+    $(FW_SRC)/novatek_ts_xinli_3rd_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_xinli_3rd_mp.bin \
+    $(FW_SRC)/focaltech_ts_hkc_2nd_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_hkc_2nd_fw.bin \
+    $(FW_SRC)/novatek_ts_tcl_1st_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/novatek_ts_tcl_1st_fw.bin \
+    $(FW_SRC)/novatek_ts_tcl_1st_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/novatek_ts_tcl_1st_mp.bin \
+    $(FW_SRC)/novatek_ts_xinli_3rd_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/novatek_ts_xinli_3rd_fw.bin \
+    $(FW_SRC)/novatek_ts_xinli_3rd_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/novatek_ts_xinli_3rd_mp.bin \
+    $(FW_SRC)/focaltech_ts_hkc_2nd_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/focaltech_ts_hkc_2nd_fw.bin
 
 # Media
 PRODUCT_COPY_FILES += \
