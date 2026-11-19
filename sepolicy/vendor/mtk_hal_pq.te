@@ -1,0 +1,2 @@
+allow mtk_hal_pq sysfs_lcm_name:file r_file_perms;
+allow mtk_hal_pq sysfs_lcm_name:dir r_dir_perms;
