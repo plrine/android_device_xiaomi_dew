@@ -1,0 +1,21 @@
+<!--
+    Input:
+        device/xiaomi/dew/manifest_p15aer.xml
+        device/xiaomi/dew/nfc/hw/manifest.xml
+        device/mediatek/vendor/common/project_manifest/manifest_secure_element_dsds.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>android.hardware.nfc</name>
+        <fqname>INfc/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.secure_element</name>
+        <fqname>ISecureElement/SIM1</fqname>
+        <fqname>ISecureElement/SIM2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.nxp.nxpnfc_aidl</name>
+        <fqname>INxpNfc/default</fqname>
+    </hal>
+</manifest>

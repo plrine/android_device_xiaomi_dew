@@ -175,8 +175,17 @@ include device/mediatek/sepolicy_vndr/SEPolicy.mk
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/framework_compatibility_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
     hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml
+
+ODM_MANIFEST_SKUS := p15a p15ae p15aer p15al p15ape p15apg
+ODM_MANIFEST_P15A_FILES := $(DEVICE_PATH)/vintf/manifest_p15a.xml
+ODM_MANIFEST_P15AE_FILES := $(DEVICE_PATH)/vintf/manifest_p15ae.xml
+ODM_MANIFEST_P15AER_FILES := $(DEVICE_PATH)/vintf/manifest_p15aer.xml
+ODM_MANIFEST_P15AL_FILES := $(DEVICE_PATH)/vintf/manifest_p15al.xml
+ODM_MANIFEST_P15APE_FILES := $(DEVICE_PATH)/vintf/manifest_p15ape.xml
+ODM_MANIFEST_P15APG_FILES := $(DEVICE_PATH)/vintf/manifest_p15apg.xml
 
 # WiFi
 WPA_SUPPLICANT_VERSION := VER_0_8_X

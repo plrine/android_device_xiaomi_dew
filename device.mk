@@ -43,7 +43,12 @@ TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
 
 # Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 35
+PRODUCT_SHIPPING_API_LEVEL := 34
+
+# HIDL
+PRODUCT_HIDL_ENABLED := true
+PRODUCT_PACKAGES += \
+    hwservicemanager
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -60,7 +65,7 @@ PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Virtual A/B
 PRODUCT_PACKAGES += \
