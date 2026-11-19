@@ -1,0 +1,7 @@
+allow hal_fingerprint_default fpc_data_file:dir create_dir_perms;
+allow hal_fingerprint_default fpc_data_file:file create_file_perms;
+
+allow hal_fingerprint_default sysfs_fpc_clk:dir r_dir_perms;
+allow hal_fingerprint_default sysfs_fpc_clk:file rw_file_perms;
+
+set_prop(hal_fingerprint_default, vendor_fp_prop)

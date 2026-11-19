@@ -1,0 +1,6 @@
+# Fingerprint
+persist.vendor.fpc.               u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.            u:object_r:vendor_fp_prop:s0
+persist.vendor.fingerprint.       u:object_r:vendor_fp_prop:s0
+vendor.fpc.                       u:object_r:vendor_fp_prop:s0
+vendor.silead.fp.                 u:object_r:vendor_fp_prop:s0
