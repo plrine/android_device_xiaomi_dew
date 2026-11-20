@@ -1,7 +1,7 @@
+# Init
+ro.vendor.rc=/vendor/etc/init/hw/
+
 # Audio 
-audio.deep_buffer.media=true
-persist.audio.button_jack.profile=volume
-persist.audio.button_jack.switch=0
 ro.vendor.audio.activity.monitor=true
 ro.vendor.audio.bluetooth.support.misound=false
 ro.vendor.audio.enable.cid=true
@@ -26,6 +26,7 @@ ro.vendor.audio.volume_super_customsetstreamtype=true
 ro.vendor.audio.volume_super_index_add=10
 ro.vendor.audio.volume_super_percent=200
 ro.vendor.audio.volume_super_streamtype=44
+vendor.audio.powerhal.latency.ul=true
 
 # Bluetooth
 ro.vendor.bt.connac3=no
@@ -260,6 +261,10 @@ telephony.lteOnCdmaDevice=1
 
 # TEE
 ro.vendor.mtk_microtrust_tee_support=1
+
+# USB
+vendor.usb.controller=musb-hdrc
+vendor.usb.vid=0x2717
 
 # WiFi
 wifi.interface=wlan0

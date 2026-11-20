@@ -125,6 +125,7 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 TARGET_BOARD_PLATFORM := mt6768
 
 # Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery

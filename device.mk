@@ -59,6 +59,7 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
+    hardware/google/pixel/pixelstats \
     hardware/google/pixel/power-libperfmgr \
     hardware/google/interfaces \
     hardware/mediatek \
