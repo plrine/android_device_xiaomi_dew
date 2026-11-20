@@ -967,9 +967,19 @@ vendor/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so
 
 # Power
+vendor/bin/batterysecret
+vendor/etc/battery_info.xml
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so
+
+# Fuelgauge
+vendor/bin/fuelgauged_nvram
+vendor/etc/init/fuelgauged_init.rc
+vendor/etc/init/fuelgauged_nvram_init.rc
+vendor/lib64/libfgauge_gm30.so
+
+# Fuelgauge - From lamu_g VVTA35.51-137 7eabca release-keys
+vendor/bin/fuelgauged|862119a2c11b364ed31f4e94818378e6753553de
 
 # Radio
 vendor/bin/ccci_mdinit
