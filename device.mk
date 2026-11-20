@@ -26,6 +26,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 $(call inherit-product-if-exists, hardware/mediatek/overlay/mssi.mk)
 PRODUCT_PACKAGES += \
     DewFrameworkResOverlay \
+    DewSettingsProviderOverlay \
     DewSystemUIResOverlay
 
 # Rootdir

@@ -176,6 +176,8 @@
 #touch
 /dev/touch                0660   root       system
 /dev/hotknot              0660   root       system
+/sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0 fts_gesture_mode 0660 system system
+/sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0 gesture_en 0660 system system
 
 #hang_detect
 /dev/RT_Monitor           0660   system     system

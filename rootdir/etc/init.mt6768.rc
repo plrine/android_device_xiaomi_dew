@@ -115,6 +115,14 @@ on charger
 on property:sys.boot_completed=1
     write /proc/pl_lk "0"
 
+on property:vendor.all.modules.ready=1
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/fts_gesture_mode
+    chmod 0660 /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/fts_gesture_mode
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/gesture_en
+    chmod 0660 /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/gesture_en
+    chown system system /proc/tp_gesture
+    chmod 0660 /proc/tp_gesture
+
 on early-fs
     write /proc/bootprof "INIT:early-fs"
 
@@ -669,6 +677,14 @@ on boot
 
     write /proc/sys/vm/dirty_writeback_centisecs 300
     chmod 0660 /sys/power/autosleep
+
+    # Touch Panel DT2W
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/fts_gesture_mode
+    chmod 0660 /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/fts_gesture_mode
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/gesture_en
+    chmod 0660 /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/gesture_en
+    chown system system /proc/tp_gesture
+    chmod 0660 /proc/tp_gesture
 
     chmod 0664 /sys/class/leds/lcd-backlight/brightness
     chown system system /sys/class/leds/lcd-backlight/brightness
