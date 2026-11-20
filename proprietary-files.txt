@@ -730,7 +730,7 @@ vendor/lib64/libmiSensorCtrl.so
 vendor/lib64/libmiXmlParser.so
 vendor/lib64/libmi_dspp.so
 vendor/lib64/libpaperMode.so
-vendor/lib64/librhytheyecare.so  
+vendor/lib64/librhytheyecare.so
 vendor/lib64/libsdr2hdr.so
 vendor/lib64/libsre.so
 vendor/lib64/libtruetone.so
@@ -747,7 +747,6 @@ vendor/lib64/libion_ulit.so
 vendor/lib64/libheichal.so
 vendor/lib64/libdisplayfeature.so
 vendor/lib64/libdisplayfeatureservice.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk.so
 
 # DRM (Widevine)
 vendor/apex/com.google.android.widevine.nonupdatable.apex
