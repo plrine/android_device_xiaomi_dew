@@ -5,3 +5,6 @@ type sysfs_fpc_clk, fs_type, sysfs_type;
 # Touchpanel
 type sysfs_touchpanel, fs_type, sysfs_type;
 type proc_tp_gesture, fs_type, proc_type;
+
+# Camera
+type sysfs_cam_name, fs_type, sysfs_type;

@@ -10,6 +10,10 @@ genfscon sysfs /devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/fts_gestur
 genfscon sysfs /devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/gesture_en u:object_r:sysfs_touchpanel:s0
 genfscon proc /tp_gesture u:object_r:proc_tp_gesture:s0
 
+# Camera
+genfscon sysfs /devices/virtual/qvga_cam u:object_r:sysfs_cam_name:s0
+genfscon sysfs /class/qvga_cam u:object_r:sysfs_cam_name:s0
+
 # DVFSRC
 genfscon sysfs /kernel/helio-dvfsrc u:object_r:sysfs_dvfsrc_dbg:s0
 

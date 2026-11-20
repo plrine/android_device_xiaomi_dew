@@ -1,0 +1,5 @@
+allow mtk_hal_camera sysfs_sensor:dir search;
+allow mtk_hal_camera sysfs_cam_name:dir r_dir_perms;
+allow mtk_hal_camera sysfs_cam_name:file r_file_perms;
+
+dontaudit mtk_hal_camera default_prop:file read;
