@@ -889,9 +889,9 @@ vendor/lib64/libvcodec_oal.so
 vendor/lib64/libvcodecdrv_header_stub.so
 
 # Media (Codec2)
-vendor/bin/hw/android.hardware.media.c2-mediatek-64b
+vendor/bin/hw/android.hardware.media.c2-mediatek-64b:vendor/bin/hw/android.hardware.media.c2-mediatek;TRYSRCFIRST
 vendor/etc/VideoLog_dynamic.ds
-vendor/etc/init/android.hardware.media.c2-mediatek.rc:vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc
+vendor/etc/init/android.hardware.media.c2-mediatek.rc
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
 vendor/etc/vintf/manifest/manifest_media_c2_default.xml
@@ -903,7 +903,7 @@ vendor/lib64/libcodec2_vpp_fa_plugin.so
 vendor/lib64/libcodec2_vpp_mi_plugin.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
-vendor/lib64/libformatter.so
+vendor/lib64/libformatter.so:vendor/lib64/libformatter_mtk.so;FIX_SONAME
 
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms-service
