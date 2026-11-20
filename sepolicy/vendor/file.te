@@ -8,3 +8,7 @@ type proc_tp_gesture, fs_type, proc_type;
 
 # Camera
 type sysfs_cam_name, fs_type, sysfs_type;
+
+# Audio
+type miev_device, dev_type;
+type sysfs_audio_pa, fs_type, sysfs_type;

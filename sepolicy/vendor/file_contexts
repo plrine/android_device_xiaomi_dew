@@ -18,5 +18,8 @@
 
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nqnfc-service\.nxp                u:object_r:hal_nfc_default_exec:s0
 
+# Xiaomi touch / audio event driver
+/dev/miev                                                              u:object_r:miev_device:s0
+
 
 

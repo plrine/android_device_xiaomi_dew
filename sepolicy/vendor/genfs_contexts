@@ -14,6 +14,9 @@ genfscon proc /tp_gesture u:object_r:proc_tp_gesture:s0
 genfscon sysfs /devices/virtual/qvga_cam u:object_r:sysfs_cam_name:s0
 genfscon sysfs /class/qvga_cam u:object_r:sysfs_cam_name:s0
 
+# Audio
+genfscon sysfs /android_audio u:object_r:sysfs_audio_pa:s0
+
 # DVFSRC
 genfscon sysfs /kernel/helio-dvfsrc u:object_r:sysfs_dvfsrc_dbg:s0
 
