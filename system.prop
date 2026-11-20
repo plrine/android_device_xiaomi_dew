@@ -2,3 +2,8 @@
 audio.deep_buffer.media=true
 persist.audio.button_jack.profile=volume
 persist.audio.button_jack.switch=0
+
+# WiFi
+ro.hardware.wlan.dbs=0
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=120

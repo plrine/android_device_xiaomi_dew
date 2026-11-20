@@ -267,8 +267,9 @@ vendor.usb.controller=musb-hdrc
 vendor.usb.vid=0x2717
 
 # WiFi
-wifi.interface=wlan0
-wifi.supplicant_scan_interval=120
+ro.vendor.wlan.chrdev=wmt_chrdev_wifi
+ro.vendor.wlan.gen=gen4m_6768
+ro.vendor.wlan.standalone.log=y
 
 # Sensors
 ro.vendor.mtk.sensor.support=yes
