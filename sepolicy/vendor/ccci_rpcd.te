@@ -1,0 +1,1 @@
+dontaudit ccci_rpcd default_prop:file read;
