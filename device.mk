@@ -350,5 +350,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/keylayout,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
 
+# Telephony
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.radio.multisim.config=dsds
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/dew/dew-vendor.mk)

@@ -990,10 +990,12 @@ vendor/bin/fuelgauged|862119a2c11b364ed31f4e94818378e6753553de
 # Radio
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
+vendor/bin/gsm0710muxd
 vendor/bin/hw/mtkfusionrild
 vendor/bin/muxreport
 vendor/bin/rcs_volte_stack
 vendor/bin/volte_clientapi_ua
+vendor/etc/init/gsm0710muxd.rc
 vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
 vendor/etc/init/mtkrild.rc

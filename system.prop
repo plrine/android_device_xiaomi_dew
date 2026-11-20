@@ -26,6 +26,15 @@ bluetooth.profile.pan.nap.enabled=true
 bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 
+# Radio / Telephony
+ro.telephony.default_network=10,10,10,10
+ro.telephony.iwlan_operation_mode=AP-assisted
+ro.telephony.sim.count=2
+ro.telephony.sim_slots.count=2
+ro.vendor.mtk_gwsd_support=1
+telephony.active_modems.max_count=2
+telephony.lteOnCdmaDevice=1
+
 # WiFi
 ro.hardware.wlan.dbs=0
 wifi.interface=wlan0
