@@ -165,6 +165,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.xiaomi
 
+$(call soong_config_set,XIAOMI_BIOMETRICS_FINGERPRINT,IMPL_VER,V2)
+
 PRODUCT_PACKAGES += \
     init.mt6768.fingerprint.rc
 
@@ -330,6 +332,10 @@ PRODUCT_PACKAGES += \
     libkeymint.vendor \
     libpuresoftkeymasterdevice.vendor \
     libsoft_attestation_cert.vendor
+
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/keylayout,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/dew/dew-vendor.mk)

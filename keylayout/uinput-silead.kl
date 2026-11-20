@@ -1,0 +1,7 @@
+#END Fingerprint_MIUIFingerprintFrame
+# Single click
+key 353   DPAD_CENTER  VIRTUAL
+
+# Double click
+key 306   BUTTON_C     VIRTUAL
+#END Fingerprint_MIUIFingerprintFrame

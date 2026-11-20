@@ -85,6 +85,7 @@ ro.vendor.gps.chrdev=gps_drv_stp
 
 # Fingerprint
 persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=681|749|145,681|749|145|local:4627039422300187648
 
 # Graphics
 ro.hardware.egl=meow
