@@ -1152,3 +1152,17 @@ vendor/lib64/libwifinvramdata.so
 vendor/lib64/libwpa_client.so
 vendor/lib64/vendor.mediatek.hardware.netdagent-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
+# NFC
+vendor/bin/hw/android.hardware.nqnfc-service.nxp|dee2136157af89a1bbcdefa4dc3c037295ce2c61
+vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek|9f44e87167666f0f66fea7496f3476fb20e05c35
+vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc|438b5a850fef328e6d2bd989d21d351b9804fce1
+vendor/etc/init/init.SN220.nfc.rc|53b6832a31e3edd0734b79bbfc92eef656c1fed2
+vendor/etc/init/nfc-service-nxp.rc:vendor/etc/init/nqnfc-service-nxp.rc|a19df071578913a43357a1b34023e9d75bca4437
+vendor/etc/libese-nxp.conf|9e4af98282f734f59ebdf6dd8a08e68a3de8b468
+vendor/etc/libnfc-nci.conf|394e37aa30d4da54a1e6fe1c7d9cd6913ec477f6
+vendor/etc/libnfc-nxp_default.conf|75f104f17ed53e704383cf44a5cb807d6ead13ca
+vendor/lib64/ese_spi_nxp.so|a1f11df826ac2b931c837303520f102f962ad6b2
+vendor/lib64/nfc_nci.nqx.default.hw.so|daa41d22678ea7dfc691d1f5f1f3c870e24b8e52
+vendor/lib64/nfc_nci_nxp.so|37476ddbcb0c2a31fa82ac6d329e0cce0095f19f
+vendor/lib64/vendor.nxp.hardware.nfc@2.0.so|ac21a668a2a85c52e46d4c474667f201f138b6b1
