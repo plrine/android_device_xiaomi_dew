@@ -77,6 +77,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so', 'vendor.mediatek.hardware.bluetooth.audio-V3-ndk.so'),
     'vendor/lib64/libbt-vendor.so': blob_fixup()
         .sig_replace('60 02 40 39 5a 00 00 94', 'e0 03 1f 2a 5a 00 00 94'),
+    'vendor/lib64/libmtkcam_hal_aidl_common.so': blob_fixup()
+        .replace_needed('android.hardware.camera.common-V2-ndk.so', 'android.hardware.camera.common-V1-ndk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
