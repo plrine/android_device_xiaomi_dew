@@ -1,1 +1,1 @@
-allow init debugfs_mmc:file setattr;
+dontaudit init debugfs_mmc:file setattr;
