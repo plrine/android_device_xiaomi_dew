@@ -21,5 +21,10 @@
 # Xiaomi touch / audio event driver
 /dev/miev                                                              u:object_r:miev_device:s0
 
+# Rescue / Cache
+/dev/block/by-name/rescue                                              u:object_r:cache_block_device:s0
+/dev/block/platform/bootdevice/by-name/rescue                          u:object_r:cache_block_device:s0
+/mnt/rescue(/.*)?                                                      u:object_r:cache_file:s0
+
 
 
