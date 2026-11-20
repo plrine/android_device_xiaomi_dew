@@ -81,7 +81,7 @@ drm.service.enabled=true
 ro.netflix.bsp_rev=MTK6768-19055-1
 
 # GNSS
-ro.vendor.mtk_log_hide_gps=1
+ro.vendor.mtk_log_hide_gps=0
 ro.vendor.gps.chrdev=gps_drv_stp
 
 # Fingerprint

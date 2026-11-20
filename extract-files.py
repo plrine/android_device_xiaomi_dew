@@ -55,6 +55,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libteei_daemon_vfs.so',
     ): blob_fixup()
         .add_needed('liblog.so'),
+    'vendor/bin/mnld': blob_fixup()
+        .replace_needed('libmnl.so', 'libmnl_mtk.so'),
    (
     'vendor/lib64/libTrueSight.so',
     'vendor/lib64/libMiVideoFilter.so'
