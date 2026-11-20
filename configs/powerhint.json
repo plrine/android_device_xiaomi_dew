@@ -157,13 +157,17 @@
     },
     {
       "Name": "DoubleTapToWake",
-      "Path": "/dev/input/event2",
+      "Paths": [
+        "/sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/fts_gesture_mode",
+        "/proc/tp_gesture"
+      ],
       "Values": [
         "0",
         "1"
       ],
       "DefaultIndex": 0,
-      "ResetOnInit": true
+      "ResetOnInit": true,
+      "AllowFailure": true
     }
   ],
   "Actions": [

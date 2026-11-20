@@ -53,7 +53,7 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
-    hardware/google/pixel \
+    hardware/google/pixel/power-libperfmgr \
     hardware/google/interfaces \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
@@ -224,7 +224,9 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+    vendor.mediatek.hardware.mtkpower-service.stub
+
+$(call soong_config_set_bool,libmtkperf_client,powerhalwrap_aidl,true)
 
 PRODUCT_PACKAGES += \
     init.mt6768.power.rc
